@@ -44,9 +44,9 @@ export const swapSpaces = (string) => {
   for (let i = 0; i < length; i++) {
     if (chars[i] === ' ') {
       let swapRnd = Math.random();
-      const swapDirection = swapRnd < 0.4
+      const swapDirection = swapRnd < 0.33
         ? -1
-        : (swapRnd > 0.6 ? 1 : 0);
+        : (swapRnd > 0.66 ? 1 : 0);
       const swapIndex = i + swapDirection;
       if (swapIndex >= 0 && swapIndex < length && chars[swapIndex] !== ' ') {
         // Swap the space with the neighbor
