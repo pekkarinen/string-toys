@@ -1,31 +1,14 @@
 /*
  * Takes in a string, number of iterations, initial rotation value (default 13), optional rotation range, optional separator, optional line length
- * rotation function applies a Caesar cipher to the string. 
- * Possible rotation 
- * values are an array of numbers from rotation to rotation_rotation number, arrayShuffled ex. rotation 0, range 3, possible rotations [-3...3]
- * GET_POST,
  * 
- * ]} Returns a string of original string rotated number of iteration times with optional separator between strings and a new line every optional line length
  * @param string { String } a string of characters
  * @param iterations { Number } number of times to iterate string
  * @param rotation { Number } initial rotation value
  * @param range { Number } number of possible rotations
- * @param separator { String } optional separator between strings
+ * @param separator { String } optional separator between iterations
  * @param lineLength { Number } optional line length
- * @param shuffle { Boolean } optional shuffle spaces
- * @returns { String } a string of original string jumbled number of iteration times with optional separator between strings and a new line every optional line length
- *
- * @example
- * iterateString('abc', 3, 1)
- * returns 'abcbaccba'
- *
- * @example
- * iterateString('abc', 3, ' ')
- * returns 'cab bca acb'
- *
- * @example
- * iterateString('abc', 6, ' ', 3)
- * returns 'cab bca acb\nbca cab acb'
+ * @param shuffle { Boolean } optional shuffle spaces. spaces swap spaces characters with neighbors
+ * @returns { String } an iteration count of random caesar ciphers of input string
  */
 
 import {rotateString, swapSpaces, arrayShuffle} from './helpers.js';

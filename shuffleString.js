@@ -1,24 +1,10 @@
 /*
- * Takes in a string, number of iterations, optional separator, optional line length
- * Returns a string of original string jumbled number of iteration times with optional separator between strings and a new line every optional line length
  * @param string { String } a string of characters
  * @param iterations { Number } number of times to iterate string
  * @param separator { String } optional separator between strings
  * @param lineLength { Number } optional line length
- * @param shuffle { Boolean } optional shuffle spaces
- * @returns { String } a string of original string jumbled number of iteration times with optional separator between strings and a new line every optional line length
- *
- * @example
- * iterateString('abc', 3)
- * returns 'abcbaccba'
- *
- * @example
- * iterateString('abc', 3, ' ')
- * returns 'cab bca acb'
- *
- * @example
- * iterateString('abc', 6, ' ', 3)
- * returns 'cab bca acb\nbca cab acb'
+ * @param shuffle { Boolean } optional shuffle spaces. spaces swap spaces characters with neighbors
+ * @returns { String } iteration count of input string with characters shuffled
  */
 
 import {jumbleCharacters, swapSpaces, getPossibleIterationCount, formatNumber} from './helpers.js';
