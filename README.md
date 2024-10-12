@@ -2,14 +2,6 @@
 
 Input string, receive result
 
-## Common params
-
-@param {string} str - String to shuffle
-@param {number} iterations - Number of iterations
-@param {string} separator - Separator between iterations
-@param {number} lineLength - Maximum line length
-@param {boolean} shuffle - removes spaces and inserts new ones
-
 ## shuffleString.js
 
 Shuffles characters in a string n times
