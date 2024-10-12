@@ -54,8 +54,8 @@ export const swapSpaces = (string) => {
       }
     }
   }
-
-  return chars.join('').replace('  ', ' ');
+  const twoOrMoreSpaces = new RegExp(' {2,}', 'g');
+  return chars.join('').replace(twoOrMoreSpaces, ' ');
 }
 
 
